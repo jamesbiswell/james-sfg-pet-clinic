@@ -1,4 +1,4 @@
-package com.jamesbiswell.jamessfgpetclinic.model;
+package jamessfgpetclinic.model;
 
 public class Person {
 

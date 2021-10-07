@@ -1,4 +1,4 @@
-package com.jamesbiswell.jamessfgpetclinic.model;
+package jamessfgpetclinic.model;
 
 import java.time.LocalDate;
 
