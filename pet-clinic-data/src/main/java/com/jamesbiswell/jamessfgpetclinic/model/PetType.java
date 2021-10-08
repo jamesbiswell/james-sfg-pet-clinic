@@ -1,4 +1,4 @@
-package jamessfgpetclinic.model;
+package com.jamesbiswell.jamessfgpetclinic.model;
 
 public class PetType {
 

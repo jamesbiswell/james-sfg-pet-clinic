@@ -1,4 +1,4 @@
-package jamessfgpetclinic;
+package com.jamesbiswell.jamessfgpetclinic;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
