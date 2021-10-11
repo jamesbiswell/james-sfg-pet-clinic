@@ -1,11 +1,11 @@
 package com.jamesbiswell.jamessfgpetclinic.services.map;
 
 import com.jamesbiswell.jamessfgpetclinic.model.Pet;
-import com.jamesbiswell.jamessfgpetclinic.services.CrudService;
+import com.jamesbiswell.jamessfgpetclinic.services.PetService;
 
 import java.util.Set;
 
-public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService<Pet, Long> {
+public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
 
     @Override
     public Set<Pet> findAll() {
