@@ -10,5 +10,4 @@ public class JamesSfgPetClinicApplication {
         SpringApplication.run(JamesSfgPetClinicApplication.class, args);
     }
 
-
 }
