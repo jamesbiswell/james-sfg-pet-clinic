@@ -1,8 +1,10 @@
 package com.jamesbiswell.jamessfgpetclinic.bootstrap;
 
 import com.jamesbiswell.jamessfgpetclinic.model.Owner;
+import com.jamesbiswell.jamessfgpetclinic.model.PetType;
 import com.jamesbiswell.jamessfgpetclinic.model.Vet;
 import com.jamesbiswell.jamessfgpetclinic.services.OwnerService;
+import com.jamesbiswell.jamessfgpetclinic.services.PetTypeService;
 import com.jamesbiswell.jamessfgpetclinic.services.VetService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
@@ -12,10 +14,12 @@ public class DataLoader implements CommandLineRunner {
 
     private final OwnerService ownerService;
     private final VetService vetService;
+    private final PetTypeService petTypeService;
 
-    public DataLoader(OwnerService ownerService, VetService vetService) {
+    public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService) {
         this.ownerService = ownerService;
         this.vetService = vetService;
+        this.petTypeService = petTypeService;
     }
 
     @Override
@@ -46,7 +50,15 @@ public class DataLoader implements CommandLineRunner {
         vet2.setLastName("Porter");
 
         vetService.save(vet2);
-        
+
+        PetType dog = new PetType();
+        dog.setName("Dog");
+        PetType savedDogPetType = petTypeService.save(dog);
+
+        PetType cat = new PetType();
+        cat.setName("Cat");
+        PetType savedCatPetType = petTypeService.save(cat);
+
         System.out.println("Loaded Vets....");
 
     }
