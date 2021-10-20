@@ -97,6 +97,7 @@
 
     <build>
         <plugins>
+
             <plugin>
                 <groupId>ro.isdc.wro4j</groupId>
                 <artifactId>wro4j-maven-plugin</artifactId>
@@ -129,6 +130,39 @@
                     </dependency>
                 </dependencies>
             </plugin>
+
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-failsafe-plugin</artifactId>-->
+<!--                <version>${maven-surefire-plugin.version}</version>-->
+<!--                <configuration>-->
+<!--                    <includes>-->
+<!--                        <include>**/*IT.java</include>-->
+<!--                    </includes>-->
+<!--                    <additionalClasspathElements>-->
+<!--                        <additionalClasspathElement>${basedir}/target/classes</additionalClasspathElement>-->
+<!--                    </additionalClasspathElements>-->
+<!--                    <parallel>none</parallel>-->
+<!--                </configuration>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <goals>-->
+<!--                            <goal>integration-test</goal>-->
+<!--                            <goal>verify</goal>-->
+<!--                        </goals>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--            </plugin>-->
+
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-surefire-plugin</artifactId>-->
+<!--                <version>2.22.1</version>-->
+<!--                <configuration>-->
+<!--                    <useSystemClassLoader>false</useSystemClassLoader>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
+
         </plugins>
     </build>
 
